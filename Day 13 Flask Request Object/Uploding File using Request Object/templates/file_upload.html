@@ -1,0 +1,12 @@
+<html>  
+<head>  
+    <title>upload</title>  
+</head>  
+<body>  
+    <h1> UPloding a New File</h1>
+    <form action = "{{ url_for('success') }}" method = "POST" enctype="multipart/form-data">  
+        <input type="file" name="file" />  
+        <input type = "submit" value="submit">  
+    </form>  
+</body>  
+</html>  
