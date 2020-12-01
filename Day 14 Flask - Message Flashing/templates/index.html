@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> This is Index Page </h1>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <center><h2>{{ messages }}</h2></center>
+        {% endif %}
+    {% endwith %}
+</body>
+</html>
